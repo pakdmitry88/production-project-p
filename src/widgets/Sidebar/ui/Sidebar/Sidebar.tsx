@@ -9,9 +9,11 @@ interface SidebarProps{
 className?: string;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
 
+    // eslint-disable-next-line arrow-body-style
     const onToggle = () => {
         setCollapsed((prev) => !prev);
     };
