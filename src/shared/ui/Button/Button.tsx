@@ -4,6 +4,7 @@ import cls from './Button.module.scss';
 
 export enum ThemeButton{
   CLEAR = 'clear',
+  OUTLINE = 'outline',
 
 }
 
@@ -12,6 +13,7 @@ className?: string;
 theme?: ThemeButton;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const Button: FunctionComponent<ButtonProps> = (props) => {
     const {
         className,

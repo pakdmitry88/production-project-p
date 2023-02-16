@@ -1,5 +1,6 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
+import { buildCssLoaders } from './loaders/buildCssLoaders';
 import { BuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
@@ -18,6 +19,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 loader: 'css-loader',
                 options: {
                     modules: {
+                        // eslint-disable-next-line max-len
                         auto: (resPath: string) => Boolean(resPath.includes('.module.scss')),
                         localIdentName: isDev
                             ? '[path][name]__[local]--[hash:base64:5]'
@@ -29,6 +31,8 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
             'sass-loader',
         ],
     };
+
+    const cssLoader = buildCssLoaders(isDev);
 
     const typescriptLoader = {
         test: /\.tsx?$/,
