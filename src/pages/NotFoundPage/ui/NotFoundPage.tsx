@@ -6,6 +6,7 @@ interface NotFoundPageProps{
 className?: string;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const NotFoundPage = ({ className }: NotFoundPageProps) => {
     const { t } = useTranslation();
 

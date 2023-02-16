@@ -9,6 +9,7 @@ interface ThemeSwitcherProps {
   className?: string;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
     const { theme, toggleTheme } = useTheme();
 

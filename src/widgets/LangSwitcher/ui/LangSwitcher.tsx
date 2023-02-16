@@ -7,9 +7,11 @@ interface LangSwitcherProps{
 className?: string;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     const { t, i18n } = useTranslation();
 
+    // eslint-disable-next-line arrow-body-style
     const toggle = () => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
     };

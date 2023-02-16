@@ -14,6 +14,7 @@ className?: string;
 theme?: AppLinkTheme;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const AppLink: FunctionComponent<AppLinkProps> = (props) => {
     const {
         to, className, children, theme = AppLinkTheme.PRIMARY,

@@ -9,6 +9,7 @@ interface UseThemeResult {
 export function useTheme(): UseThemeResult {
     const { theme, setTheme } = useContext(ThemeContext);
 
+    // eslint-disable-next-line arrow-body-style
     const toggleTheme = () => {
         const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
 

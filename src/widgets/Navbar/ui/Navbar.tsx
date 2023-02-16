@@ -8,6 +8,7 @@ interface NavbarProps{
   className?: string;
 }
 
+// eslint-disable-next-line arrow-body-style
 export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation('about');
 

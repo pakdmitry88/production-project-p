@@ -3,6 +3,7 @@ import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContex
 
 const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT;
 
+// eslint-disable-next-line arrow-body-style
 const ThemeProvider: FunctionComponent = ({ children }) => {
     const [theme, setTheme] = useState<Theme>(defaultTheme);
 

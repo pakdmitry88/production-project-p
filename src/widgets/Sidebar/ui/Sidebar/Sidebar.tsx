@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 // eslint-disable-next-line import/no-duplicates
-import React from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'widgets/LangSwitcher/ui/LangSwitcher';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
@@ -15,7 +15,7 @@ className?: string;
 // eslint-disable-next-line arrow-body-style
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
-
+    const { t } = useTranslation();
     // eslint-disable-next-line arrow-body-style
     const onToggle = () => {
         setCollapsed((prev) => !prev);
@@ -28,7 +28,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 className,
             ])}
         >
-            <Button data-testid="sidebar-toggle" onClick={onToggle}>toggle</Button>
+            <Button data-testid="sidebar-toggle" onClick={onToggle}>{t('Переключить')}</Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lang} />
