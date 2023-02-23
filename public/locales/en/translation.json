@@ -7,5 +7,7 @@
   "Произошла непредвиденная ошибка": "Something went wrong",
   "Обновить страницу": "Reload this page",
   "Переключить": "Toggle",
-  "Короткий язык": "En"
+  "Короткий язык": "En",
+  "Введите username": "Type username",
+  "Введите пароль": "Enter password"
 }
