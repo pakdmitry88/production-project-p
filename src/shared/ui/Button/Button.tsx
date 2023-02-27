@@ -22,6 +22,7 @@ className?: string;
 theme?: ThemeButton;
 square?: boolean;
 size?: ButtonSize;
+disabled?: boolean;
 }
 
 // eslint-disable-next-line arrow-body-style
@@ -31,6 +32,7 @@ export const Button: FunctionComponent<ButtonProps> = (props) => {
         children,
         theme,
         square,
+        disabled,
         size = ButtonSize.M,
         ...otherProps
     } = props;
@@ -39,12 +41,14 @@ export const Button: FunctionComponent<ButtonProps> = (props) => {
         [cls[theme]]: true,
         [cls.square]: square,
         [cls[size]]: true,
+        [cls.disabled]: disabled,
     };
 
     return (
         <button
             type="button"
             className={classNames(cls.Button, mods, [className, cls[theme]])}
+            disabled={disabled}
             {...otherProps}
         >
             {children}
