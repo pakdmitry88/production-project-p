@@ -1,4 +1,6 @@
-import { ButtonHTMLAttributes, FunctionComponent } from 'react';
+import {
+    ButtonHTMLAttributes, FunctionComponent, memo, ReactNode,
+} from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
@@ -23,10 +25,11 @@ theme?: ThemeButton;
 square?: boolean;
 size?: ButtonSize;
 disabled?: boolean;
+children?: ReactNode;
 }
 
 // eslint-disable-next-line arrow-body-style
-export const Button: FunctionComponent<ButtonProps> = (props) => {
+export const Button = memo((props: ButtonProps) => {
     const {
         className,
         children,
@@ -54,4 +57,4 @@ export const Button: FunctionComponent<ButtonProps> = (props) => {
             {children}
         </button>
     );
-};
+});
