@@ -21,7 +21,7 @@ export default {
 } as ComponentMeta<typeof AboutPage>;
 
 // eslint-disable-next-line react/jsx-props-no-spreading, max-len
-const Template: ComponentStory<typeof AboutPage> = (args) => <AboutPage {...args as Record<string, unknown>} />;
+const Template: ComponentStory<typeof AboutPage> = () => <AboutPage />;
 
 export const Normal = Template.bind({});
 Normal.args = {};

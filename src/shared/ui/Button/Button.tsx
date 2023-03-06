@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import {
-    ButtonHTMLAttributes, FunctionComponent, memo, ReactNode,
+    ButtonHTMLAttributes, memo, ReactNode,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
@@ -21,7 +22,7 @@ export enum ButtonSize {
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
 className?: string;
-theme?: ThemeButton;
+theme: ThemeButton;
 square?: boolean;
 size?: ButtonSize;
 disabled?: boolean;
@@ -39,7 +40,7 @@ export const Button = memo((props: ButtonProps) => {
         size = ButtonSize.M,
         ...otherProps
     } = props;
-
+    // @ts-ignore
     const mods: Record<string, boolean> = {
         [cls[theme]]: true,
         [cls.square]: square,

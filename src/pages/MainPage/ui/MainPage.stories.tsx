@@ -21,7 +21,7 @@ export default {
 } as ComponentMeta<typeof MainPage>;
 
 // eslint-disable-next-line max-len
-const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args as Record<string, unknown>} />;
+const Template: ComponentStory<typeof MainPage> = () => <MainPage />;
 
 export const Normal = Template.bind({});
 Normal.args = {};

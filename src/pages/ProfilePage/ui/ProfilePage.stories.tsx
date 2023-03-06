@@ -1,5 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable max-len */
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import 'app/styles/index.scss';

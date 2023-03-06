@@ -26,6 +26,7 @@ describe('classNames', () => {
     // eslint-disable-next-line arrow-body-style
     test('one of mods undefined', () => {
         const expected = 'someClass class1 class2 hovered';
+        // @ts-ignore
         expect(classNames('someClass', { hovered: true, scrollable: undefined }, ['class1', 'class2'])).toBe(expected);
     });
 });

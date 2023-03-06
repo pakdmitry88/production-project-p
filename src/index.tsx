@@ -11,15 +11,15 @@ import { StoreProvider } from 'app/providers/StoreProvider';
 
 render(
     <div>
-        <StoreProvider>
-            <BrowserRouter>
+        <BrowserRouter>
+            <StoreProvider>
                 <ErrorBoundary>
                     <ThemeProvider>
                         <App />
                     </ThemeProvider>
                 </ErrorBoundary>
-            </BrowserRouter>
-        </StoreProvider>
+            </StoreProvider>
+        </BrowserRouter>
     </div>,
     document.getElementById('root'),
 );
