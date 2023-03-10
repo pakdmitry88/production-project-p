@@ -2,5 +2,10 @@
   "Профиль": "Profile",
   "Редактировать": "Edit profile",
   "Ваше имя": "Fisrt name",
-  "Ваша фамилия": "Last name"
+  "Ваша фамилия": "Last name",
+  "Произошла ошибка при загрузке профиля": "Something went wrong",
+  "Попробуйте обновить страницу": "Try to reload page",
+  "Отменить": "Cancel",
+  "Введите имя пользователя": "Add a username",
+  "Введите ссылку на аватар": "Add link to avatar"
 }

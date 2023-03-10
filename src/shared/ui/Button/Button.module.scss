@@ -1,3 +1,4 @@
+/* stylelint-disable custom-property-pattern */
 .Button {
     cursor: pointer;
     color: var(--primary-color);
@@ -21,6 +22,12 @@
 
 .outline {
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+}
+
+.outline_red {
+    border: 1px solid var(---red-red);
     color: var(--primary-color);
     background: none;
 }
