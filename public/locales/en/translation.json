@@ -15,5 +15,10 @@
   "Вы ввели неверный логин или пароль": "Uncorrect username or password",
   "PROFILE PAGE": "Profile page",
   "Укажите валюту": "Choose currency",
-  "Укажите страну": "Choose your country"
+  "Укажите страну": "Choose your country",
+  "Серверная ошибка при сохранении": "Server error by save data",
+  "Некорректный регион": "Incorrect region",
+  "Некорректный возраст": "Incorrect age",
+  "Имя и фамилия обязательны": "First name and last name reccuaried",
+  "Данные не указаны": "No typing data"
 }

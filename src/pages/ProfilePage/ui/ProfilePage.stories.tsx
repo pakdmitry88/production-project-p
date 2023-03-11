@@ -7,6 +7,8 @@ import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProvider';
 // eslint-disable-next-line max-len
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
+import { Country } from 'entities/Country';
+import { Currency } from 'entities/Currency';
 import { ThemeDecorator } from '../../../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import ProfilePage from './ProfilePage';
 
@@ -27,8 +29,32 @@ const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...
 
 export const Normal = Template.bind({});
 Normal.args = {};
-Normal.decorators = [StoreDecorator({})];
+Normal.decorators = [StoreDecorator({
+    profile: {
+        form: {
+            username: 'admin',
+            age: 34,
+            country: Country.Tajikistan,
+            lastname: 'Pak',
+            first: 'Dima',
+            city: 'Busan',
+            currency: Currency.RUB,
+        },
+    },
+})];
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
+    profile: {
+        form: {
+            username: 'admin',
+            age: 34,
+            country: Country.Tajikistan,
+            lastname: 'Pak',
+            first: 'Dima',
+            city: 'Busan',
+            currency: Currency.RUB,
+        },
+    },
+})];
