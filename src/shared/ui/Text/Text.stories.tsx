@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import 'app/styles/index.scss';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Text, TextTheme } from './Text';
+import { Text, TextSize, TextTheme } from './Text';
 // eslint-disable-next-line import/order
 // eslint-disable-next-line max-len
 
@@ -65,3 +65,11 @@ onlyTextDark.args = {
     text: 'Decription Decription Decription Decription Decription',
 };
 onlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const SizeL = Template.bind({});
+
+SizeL.args = {
+    title: 'Title lorem ipsum dolor...',
+    text: 'Decription Decription Decription Decription Decription',
+    size: TextSize.L,
+};
