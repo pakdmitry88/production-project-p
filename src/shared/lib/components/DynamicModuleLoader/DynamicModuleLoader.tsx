@@ -18,7 +18,7 @@ removeAfterUnmount?: boolean;
 
 export const DynamicModuleLoader: FunctionComponent<DynamicModuleLoaderProps> = (props) => {
     const {
-        children, reducers, removeAfterUnmount,
+        children, reducers, removeAfterUnmount = true,
     } = props;
 
     const store = useStore() as ReduxStoreWithManager;

@@ -21,5 +21,7 @@
   "Некорректный возраст": "Incorrect age",
   "Имя и фамилия обязательны": "First name and last name reccuaried",
   "Данные не указаны": "No typing data",
-  "Комментарии отсутствуют": "No Comments yet"
+  "Комментарии отсутствуют": "No Comments yet",
+  "Введите текст комментария": "Add your comment",
+  "Отправить": "Send"
 }

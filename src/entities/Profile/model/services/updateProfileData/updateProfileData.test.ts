@@ -12,6 +12,7 @@ const data = {
     first: 'Dima',
     city: 'Busan',
     currency: Currency.RUB,
+    id: '1',
 };
 // @ts-ignore
 describe('updateProfileData.test', () => {
