@@ -5,7 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'widgets/LangSwitcher/ui/LangSwitcher';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
-import { SidebarItemList } from '../../model/items';
+import { getSidebarItems } from 'widgets/Sidebar/model/selectors/getSidebarItems';
+import { useSelector } from 'react-redux';
 import { Button, ButtonSize, ThemeButton } from '../../../../shared/ui/Button/Button';
 import { SideBarItem } from '../SideBarItem/SideBarItem';
 import cls from './Sidebar.module.scss';
@@ -18,6 +19,7 @@ interface SidebarProps {
 export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
     const { t } = useTranslation();
+    const sidebarItemsList = useSelector(getSidebarItems);
     // eslint-disable-next-line arrow-body-style
     const onToggle = () => {
         setCollapsed((prev) => !prev);
@@ -42,7 +44,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             </Button>
             <div className={cls.items}>
                 <div>
-                    {SidebarItemList.map((item) => (
+                    {sidebarItemsList.map((item) => (
                         <SideBarItem
                             item={item}
                             collapsed={collapsed}
