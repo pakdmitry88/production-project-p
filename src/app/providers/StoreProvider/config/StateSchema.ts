@@ -12,9 +12,11 @@ import { ArticleDetailsSchema } from 'entities/Article';
 import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
+import { UISchema } from 'features/UI';
 
 export interface StateSchema {
   counter: CounterSchema;
+  ui: UISchema;
   user: UserSchema;
   loginForm?: LoginSchema;
   profile?: ProfileSchema;
