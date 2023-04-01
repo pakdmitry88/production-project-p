@@ -59,8 +59,8 @@ export const ArticlesPageFilters = ({ className }: ArticlesPageFiltersProps) => 
     const onChangeSearch = useCallback((search: string) => {
         dispatch(articlesPageActions.setSearch(search));
         dispatch(articlesPageActions.setPage(1));
-        debouncedFetchData();
-    }, [debouncedFetchData, dispatch]);
+        fetchData();
+    }, [dispatch, fetchData]);
 
     const onChangeType = useCallback((value: ArticleType) => {
         dispatch(articlesPageActions.setType(value));

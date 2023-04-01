@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { actions } from '@storybook/addon-actions';
 import { Tabs } from './Tabs';
 
 export default {
@@ -31,5 +30,5 @@ Normal.args = {
         },
     ],
     value: 'tab 2',
-    onTabClick: actions('onTabClick'),
+    // onTabClick: actions('onTabClick'),
 };
