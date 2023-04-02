@@ -1,7 +1,4 @@
 import { lazy } from 'react';
 
 // eslint-disable-next-line arrow-body-style
-export const ArticleEditPageAsync = lazy(() => new Promise((resolve) => {
-    // @ts-ignore
-    setTimeout(() => resolve(import('./ArticleEditPage')), 1500);
-}));
+export const ArticleEditPageAsync = lazy(() => import('./ArticleEditPage'));
