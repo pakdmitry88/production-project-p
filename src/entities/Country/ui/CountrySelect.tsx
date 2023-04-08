@@ -37,7 +37,7 @@ export const CountrySelect = memo(({
             label={t('Укажите валюту')}
             onChange={onChangeHandler}
             readonly={readonly}
-            direction="top"
+            direction="top right"
         />
     );
 });
