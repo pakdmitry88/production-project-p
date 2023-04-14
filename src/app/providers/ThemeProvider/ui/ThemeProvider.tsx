@@ -1,14 +1,15 @@
-import React, { FunctionComponent, useMemo, useState } from 'react';
+import { ReactNode, useMemo, useState } from 'react';
 import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext';
 
 const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT;
 
 interface ThemeProviderProps {
   initialTheme?: Theme;
+  children: ReactNode;
 }
 
 // eslint-disable-next-line arrow-body-style
-const ThemeProvider: FunctionComponent<ThemeProviderProps> = (props) => {
+const ThemeProvider = (props: ThemeProviderProps) => {
     const {
         initialTheme,
         children,
