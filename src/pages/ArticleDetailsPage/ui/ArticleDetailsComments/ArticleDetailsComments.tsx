@@ -12,8 +12,8 @@ import { getArticleCommentsIsLoading } from 'pages/ArticleDetailsPage/model/sele
 import { fetchCommentsByArticleId } from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { VStack } from 'shared/ui/Stack';
-import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { Loader } from 'shared/ui/Loader/Loader';
+import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 
 interface ArticleDetailsCommentsProps{
 className?: string;
