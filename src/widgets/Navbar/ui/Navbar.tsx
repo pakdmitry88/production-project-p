@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 /* eslint-disable i18next/no-literal-string */
@@ -16,7 +17,9 @@ import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { HStack } from 'shared/ui/Stack';
 import { NotificationButton } from 'features/notificationButton';
 import { AvatarDropdown } from 'features/avatarDropdown/ui/AvatarDropdown/AvatarDropdown';
+import { Drawer } from 'shared/ui/Drawer/Drawer';
 import cls from './Navbar.module.scss';
+import { NotificationList } from 'entities/Notification';
 
 interface NavbarProps{
   className?: string;
@@ -52,6 +55,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                     {t('Создать статью')}
                 </AppLink>
                 <HStack gap="16" className={cls.actions}>
+                    
                     <NotificationButton />
                     <AvatarDropdown />
                 </HStack>
