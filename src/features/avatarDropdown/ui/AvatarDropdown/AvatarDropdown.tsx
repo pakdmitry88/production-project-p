@@ -1,14 +1,14 @@
 /* eslint-disable i18next/no-literal-string */
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Dropdown } from 'shared/ui/Popups/components/Dropdown/Dropdown';
-import { Avatar } from 'shared/ui/Avatar/Avatar';
-import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback } from 'react';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Dropdown } from '@/shared/ui/Popups/components/Dropdown/Dropdown';
+import { Avatar } from '@/shared/ui/Avatar/Avatar';
+import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
 import {
     getUserAuthData, isUserAdmin, isUserManager, userActions,
-} from 'entities/User';
+} from '@/entities/User';
 
 interface AvatarDropdownProps{
 className?: string;

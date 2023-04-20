@@ -1,5 +1,5 @@
 /* eslint-disable arrow-body-style */
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import './Loader.scss';
 
 interface LoaderProps{

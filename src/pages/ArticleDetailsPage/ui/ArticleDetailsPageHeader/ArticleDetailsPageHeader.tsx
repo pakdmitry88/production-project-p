@@ -1,15 +1,15 @@
 /* eslint-disable i18next/no-literal-string */
 /* eslint-disable max-len */
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { useNavigate } from 'react-router-dom';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { useCallback } from 'react';
 import { useSelector } from 'react-redux';
-import { getArticleDetailsData } from 'entities/Article/model/selectors/articleDetails';
-import { getCanEditArticle } from 'pages/ArticleDetailsPage/model/selectors/article';
-import { HStack } from 'shared/ui/Stack';
+import { Button, ThemeButton } from '@/shared/ui/Button/Button';
+import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { getArticleDetailsData } from '@/entities/Article/model/selectors/articleDetails';
+import { getCanEditArticle } from '@/pages/ArticleDetailsPage/model/selectors/article';
+import { HStack } from '@/shared/ui/Stack';
 
 interface ArticleDetailsPageHeaderProps{
 className?: string;

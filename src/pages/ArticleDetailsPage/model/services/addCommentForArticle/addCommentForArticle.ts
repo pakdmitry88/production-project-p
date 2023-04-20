@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ThunkConfig } from 'app/providers/StoreProvider/config/StateSchema';
-import { getArticleDetailsData } from 'entities/Article/model/selectors/articleDetails';
-import { getUserAuthData } from 'entities/User';
+import { ThunkConfig } from '@/app/providers/StoreProvider/config/StateSchema';
+import { getArticleDetailsData } from '@/entities/Article/model/selectors/articleDetails';
+import { getUserAuthData } from '@/entities/User';
 import { fetchCommentsByArticleId } from '../fetchCommentsByArticleId/fetchCommentsByArticleId';
 
 export const addCommentForArticle = createAsyncThunk<

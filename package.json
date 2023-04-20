@@ -116,7 +116,8 @@
     "react-router-dom": "^6.2.1",
     "react-virtualized": "^9.22.3",
     "reg-cli": "^0.17.6",
-    "storybook-addon-mock": "^2.4.1"
+    "storybook-addon-mock": "^2.4.1",
+    "ts-morph": "^16.0.0"
   },
   "loki": {
     "configurations": {

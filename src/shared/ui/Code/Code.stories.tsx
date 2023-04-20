@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Code } from 'shared/ui/Code/Code';
+import { Code } from '@/shared/ui/Code/Code';
 
 export default {
     title: 'shared/Code',

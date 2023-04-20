@@ -1,12 +1,12 @@
 /* eslint-disable max-len */
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { ArticleList } from 'entities/Article';
-import { getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView } from 'pages/ArticlesPage/model/selectors/articlesPageSelectors';
 import { useSearchParams } from 'react-router-dom';
-import { getArticle } from 'pages/ArticlesPage/model/slices/articlePageSlice';
-import { Text } from 'shared/ui/Text/Text';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { ArticleList } from '@/entities/Article';
+import { getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView } from '@/pages/ArticlesPage/model/selectors/articlesPageSelectors';
+import { getArticle } from '@/pages/ArticlesPage/model/slices/articlePageSlice';
+import { Text } from '@/shared/ui/Text/Text';
 
 interface ArticleInfiniteListProps{
 className?: string;

@@ -1,9 +1,9 @@
 /* eslint-disable i18next/no-literal-string */
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Select } from 'shared/ui/Select/Select';
 import { memo, useCallback } from 'react';
-import { ListBox } from 'shared/ui/Popups/components/ListBox/ListBox';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Select } from '@/shared/ui/Select/Select';
+import { ListBox } from '@/shared/ui/Popups/components/ListBox/ListBox';
 import { Country } from '../model/types/country';
 
 interface CountrySelectProps {

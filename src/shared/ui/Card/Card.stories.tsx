@@ -2,7 +2,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Card } from './Card';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 import { Text } from '../Text/Text';
 
 export default {

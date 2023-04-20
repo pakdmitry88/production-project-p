@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ThunkConfig } from 'app/providers/StoreProvider';
+import { ThunkConfig } from '@/app/providers/StoreProvider';
 import {
     getArticlesPageHasMore, getArticlesPageIsLoading, getArticlesPageNum,
 } from '../../selectors/articlesPageSelectors';

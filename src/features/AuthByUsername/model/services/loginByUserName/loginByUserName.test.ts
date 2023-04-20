@@ -1,5 +1,5 @@
-import { userActions } from 'entities/User';
-import { TestAsynkThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
+import { userActions } from '@/entities/User';
+import { TestAsynkThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { loginByUserName } from './loginByUserName';
 // @ts-ignore
 describe('loginByUserName.test', () => {
