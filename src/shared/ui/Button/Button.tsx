@@ -28,6 +28,7 @@ square?: boolean;
 size?: ButtonSize;
 disabled?: boolean;
 children?: ReactNode;
+fullWidth?: boolean;
 }
 
 // eslint-disable-next-line arrow-body-style
@@ -35,9 +36,10 @@ export const Button = memo((props: ButtonProps) => {
     const {
         className,
         children,
-        theme,
+        theme = ThemeButton.OUTLINE,
         square,
         disabled,
+        fullWidth,
         size = ButtonSize.M,
         ...otherProps
     } = props;
@@ -47,6 +49,7 @@ export const Button = memo((props: ButtonProps) => {
         [cls.square]: square,
         [cls[size]]: true,
         [cls.disabled]: disabled,
+        [cls.fullWidth]: fullWidth,
     };
 
     return (
