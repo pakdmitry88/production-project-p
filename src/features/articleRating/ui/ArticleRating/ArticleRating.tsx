@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useCallback } from 'react';
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { RatingCard } from '@/entities/Rating';
 import { useGetArticleRating, useRateArticle } from '../../api/articleRatingApi';
 import { getUserAuthData } from '@/entities/User';
