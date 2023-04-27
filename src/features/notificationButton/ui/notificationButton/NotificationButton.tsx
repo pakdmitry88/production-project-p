@@ -6,9 +6,9 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import NotificationIcon from '@/shared/assets/icon/notification-20-20.svg';
 import { Popover } from '@/shared/ui/Popups';
 import { NotificationList } from '@/entities/Notification';
-import { Button, ThemeButton } from '@/shared/ui/Button/Button';
-import { Icon } from '@/shared/ui/Icon/Icon';
-import { Drawer } from '@/shared/ui/Drawer/Drawer';
+import { Button, ThemeButton } from '@/shared/ui/Button';
+import { Icon } from '@/shared/ui/Icon';
+import { Drawer } from '@/shared/ui/Drawer';
 import { AnimationProvider } from '@/shared/lib/components/AnimationProvider';
 import cls from './NotificationButton.module.scss';
 

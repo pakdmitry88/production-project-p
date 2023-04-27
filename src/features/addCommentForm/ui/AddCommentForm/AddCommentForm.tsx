@@ -4,8 +4,8 @@
 /* eslint-disable i18next/no-literal-string */
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Input } from '@/shared/ui/Input/Input';
-import { Button, ThemeButton } from '@/shared/ui/Button/Button';
+import { Input } from '@/shared/ui/Input';
+import { Button, ThemeButton } from '@/shared/ui/Button';
 import cls from './AddCommentForm.module.scss';
 import { useSelector } from 'react-redux';
 import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';

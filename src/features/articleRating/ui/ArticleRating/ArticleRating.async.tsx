@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import { Suspense, lazy } from 'react';
 import { ArticleRatingProps } from './ArticleRating';
-import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
+import { Skeleton } from '@/shared/ui/Skeleton';
 
 const ArticleRatingLazy = lazy(
     () => import('./ArticleRating'),

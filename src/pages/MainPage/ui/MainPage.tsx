@@ -1,7 +1,7 @@
 /* eslint-disable i18next/no-literal-string */
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page/Page';
-import { StarRating } from '@/shared/ui/StarRating/StarRating';
+import { StarRating } from '@/shared/ui/StarRating';
 import { RatingCard } from '@/entities/Rating';
 
 // eslint-disable-next-line arrow-body-style
