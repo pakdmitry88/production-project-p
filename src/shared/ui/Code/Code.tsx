@@ -1,10 +1,9 @@
 /* eslint-disable i18next/no-literal-string */
-import { ReactNode, useCallback } from 'react';
+import { useCallback } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import CopyIcon from '@/shared/assets/icon/copy-20-20.svg';
 import { Button, ThemeButton } from '../Button/Button';
 import cls from './Code.module.scss';
-import { Icon } from '../Icon/Icon';
 
 interface CodeProps{
 className?: string;

@@ -104,6 +104,7 @@
     "axios": "^0.26.1",
     "circular-dependency-plugin": "^5.2.2",
     "eslint-plugin-pak-eslint-plugin": "^0.0.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
     "i18next": "^21.9.0",
     "i18next-browser-languagedetector": "^6.1.3",

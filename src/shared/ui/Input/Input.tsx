@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { is } from 'immer/dist/internal';
 import React, {
     InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
