@@ -4,12 +4,12 @@ import TiledIcon from '@/shared/assets/icon/tiled-24-24.svg';
 import { Button, ThemeButton } from '@/shared/ui/Button';
 import { Icon } from '@/shared/ui/Icon';
 import cls from './ArticleViewSelector.module.scss';
-import { ArticleView } from '../../model/consts/articleConsts';
+import { ArticleView } from '@/entities/Article';
 
-interface ArticleViewSelectorProps{
-className?: string;
-view: ArticleView;
-onViewClick?: (view: ArticleView) => void;
+interface ArticleViewSelectorProps {
+  className?: string;
+  view: ArticleView;
+  onViewClick?: (view: ArticleView) => void;
 }
 
 const viewTypes = [
