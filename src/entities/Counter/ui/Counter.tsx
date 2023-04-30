@@ -1,20 +1,28 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable i18next/no-literal-string */
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Button, ThemeButton } from '@/shared/ui/Button';
-import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
-import { counterActions } from '../model/slice/counterSlice';
+import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
+import { useCounterActions } from '../model/slice/counterSlice';
 
 export const Counter = () => {
     const dispatch = useDispatch();
-    const counterValue = useSelector(getCounterValue);
+    const counterValue = useCounterValue();
+    const { decrement, increment, add } = useCounterActions();
 
-    const increment = () => {
-        dispatch(counterActions.increment());
+    const handleInc = () => {
+        // dispatch(counterActions.increment());
+        increment();
     };
 
-    const decrement = () => {
-        dispatch(counterActions.decrement());
+    const handleDec = () => {
+        // dispatch(counterActions.decrement());
+        decrement();
+    };
+
+    const handleAddFive = () => {
+    // dispatch(counterActions.decrement());
+        add(5);
     };
     // @ts-ignore
     return (
@@ -23,16 +31,23 @@ export const Counter = () => {
             <Button
                 theme={ThemeButton.BACKGROUND}
                 data-testid="increment-btn"
-                onClick={increment}
+                onClick={handleInc}
             >
                 increment
             </Button>
             <Button
                 theme={ThemeButton.BACKGROUND}
                 data-testid="decrement-btn"
-                onClick={decrement}
+                onClick={handleDec}
             >
                 decrement
+            </Button>
+            <Button
+                theme={ThemeButton.BACKGROUND}
+                data-testid="decrement-btn"
+                onClick={handleAddFive}
+            >
+                addFive
             </Button>
         </div>
     );
