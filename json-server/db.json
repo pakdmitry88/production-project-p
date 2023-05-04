@@ -670,6 +670,15 @@
         "MANAGER"
       ],
       "avatar": "https://pbs.twimg.com/media/Cz_cyZHW8AE-qtE?format=jpg&name=large"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://miro.medium.com/max/1200/1*62DACylOvJPnqUvaRPzMIA.png"
     }
   ],
   "profile": [
