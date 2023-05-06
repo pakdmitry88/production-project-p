@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import * as commonCommands from './commands/common';
 import * as profileCommands from './commands/profile';
 import * as articleCommands from './commands/article';
