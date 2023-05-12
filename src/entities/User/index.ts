@@ -9,3 +9,7 @@ export { getUserAuthData } from './model/selectors/getUserAuthData/getUserAuthDa
 export { getUserInited } from './model/selectors/geUserInited/getUserInited';
 
 export type { UserSchema, User } from './model/types/user';
+
+export { useJsonSettings } from './model/selectors/jsonSettings';
+// export { useJsonSettings } from './model/selectors/jsonSettings';
+export { saveJsonSettings } from './model/services/saveJsonSattings';

@@ -1240,6 +1240,11 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
       },
+      "jsonSettings": {
+        "theme": "app_orange_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://miro.medium.com/max/1200/1*62DACylOvJPnqUvaRPzMIA.png"
     },
     {
@@ -1253,6 +1258,11 @@
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
       },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://pbs.twimg.com/media/Cz_cyZHW8AE-qtE?format=jpg&name=large"
     },
     {
@@ -1265,6 +1275,11 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://pbs.twimg.com/media/Cz_cyZHW8AE-qtE?format=jpg&name=large"
     },
