@@ -18,7 +18,10 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
     const dispatch = useAppDispatch();
     const onToggleHandler = useCallback(() => {
         toggleTheme((newTheme) => {
-            dispatch(saveJsonSettings({ theme: newTheme }));
+            return dispatch(saveJsonSettings({
+                theme: newTheme,
+                isArticlesPageWasOpen: false,
+            }));
         });
     }, [dispatch, toggleTheme]);
 

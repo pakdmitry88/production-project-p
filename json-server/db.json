@@ -1243,7 +1243,8 @@
       "jsonSettings": {
         "theme": "app_orange_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpen": true
       },
       "avatar": "https://miro.medium.com/max/1200/1*62DACylOvJPnqUvaRPzMIA.png"
     },
