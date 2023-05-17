@@ -1238,13 +1238,14 @@
       ],
       "features": {
         "isArticleRatingEnabled": true,
-        "isCounterEnabled": true
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
-        "isArticlesPageWasOpen": true
+        "isArticlesPageWasOpen": false
       },
       "avatar": "https://miro.medium.com/max/1200/1*62DACylOvJPnqUvaRPzMIA.png"
     },

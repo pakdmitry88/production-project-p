@@ -13,6 +13,8 @@ import { AppRouter } from './providers/router';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { PageLoader } from '@/widgets/PageLoader/ui/PageLoader';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { MainLayout } from '@/shared/layouts/MainLayout';
 
 // eslint-disable-next-line arrow-body-style
 const App = () => {
@@ -29,18 +31,34 @@ const App = () => {
             <PageLoader />
         );
     }
-
     return (
-        <div className={classNames('app', {}, [])}>
-            <Suspense fallback="">
-                <Navbar />
-                <div className="content-page">
-                    <Sidebar />
-                    {inited && <AppRouter />}
-                </div>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            off={(
+                <div className={classNames('app', {}, [theme])}>
+                    <Suspense fallback="">
+                        <Navbar />
+                        <div className="content-page">
+                            <Sidebar />
+                            {inited && <AppRouter />}
+                        </div>
 
-            </Suspense>
-        </div>
+                    </Suspense>
+                </div>
+            )}
+            on={(
+                <div className={classNames('app_redesigned', {}, [theme])}>
+                    <Suspense fallback="">
+                        <MainLayout
+                            header={<Navbar />}
+                            content={<AppRouter />}
+                            sidebar={<Sidebar />}
+                            toolbar={<div>sdfsdfs</div>}
+                        />
+                    </Suspense>
+                </div>
+            )}
+        />
     );
 };
 
