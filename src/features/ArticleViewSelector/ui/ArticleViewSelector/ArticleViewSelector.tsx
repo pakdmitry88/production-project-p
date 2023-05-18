@@ -39,6 +39,8 @@ export const ArticleViewSelector = (props: ArticleViewSelectorProps) => {
                     onClick={onClick(viewTypes.view)}
                 >
                     <Icon
+                        width={24}
+                        height={24}
                         Svg={viewTypes.icon}
                         className={classNames('', { [cls.notSelected]: viewTypes.view !== view })}
                     />
