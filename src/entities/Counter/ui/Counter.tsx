@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable i18next/no-literal-string */
 import { useDispatch } from 'react-redux';
-import { Button, ThemeButton } from '@/shared/ui/Button';
+import { Button, ThemeButton } from '@/shared/ui/deprecated/Button';
 import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 import { useCounterActions } from '../model/slice/counterSlice';
 

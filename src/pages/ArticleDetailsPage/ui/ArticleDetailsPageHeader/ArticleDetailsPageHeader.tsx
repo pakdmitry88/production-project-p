@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
 import { useSelector } from 'react-redux';
-import { Button, ThemeButton } from '@/shared/ui/Button';
+import { Button, ThemeButton } from '@/shared/ui/deprecated/Button';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { getArticleDetailsData } from '@/entities/Article/model/selectors/articleDetails';
 import { getCanEditArticle } from '@/pages/ArticleDetailsPage/model/selectors/article';
-import { HStack } from '@/shared/ui/Stack';
+import { HStack } from '@/shared/ui/deprecated/Stack';
 import { getRouteArticleEdit, getRouteArticles } from '@/shared/const/router';
 
 interface ArticleDetailsPageHeaderProps{

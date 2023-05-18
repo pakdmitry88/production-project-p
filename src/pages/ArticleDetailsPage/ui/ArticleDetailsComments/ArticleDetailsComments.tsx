@@ -4,15 +4,15 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Suspense, useCallback } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextSize } from '@/shared/ui/Text';
+import { Text, TextSize } from '@/shared/ui/deprecated/Text';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';
 import { getArticleComments } from '@/pages/ArticleDetailsPage/model/slices/articleDetailsCommentsSlice';
 import { getArticleCommentsIsLoading } from '@/pages/ArticleDetailsPage/model/selectors/comments';
 import { fetchCommentsByArticleId } from '@/pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { VStack } from '@/shared/ui/Stack';
-import { Loader } from '@/shared/ui/Loader';
+import { VStack } from '@/shared/ui/deprecated/Stack';
+import { Loader } from '@/shared/ui/deprecated/Loader';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 

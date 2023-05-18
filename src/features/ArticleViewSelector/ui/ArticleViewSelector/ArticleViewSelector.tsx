@@ -1,8 +1,8 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
 import ListIcon from '@/shared/assets/icon/list-24-24.svg';
 import TiledIcon from '@/shared/assets/icon/tiled-24-24.svg';
-import { Button, ThemeButton } from '@/shared/ui/Button';
-import { Icon } from '@/shared/ui/Icon';
+import { Button, ThemeButton } from '@/shared/ui/deprecated/Button';
+import { Icon } from '@/shared/ui/deprecated/Icon';
 import cls from './ArticleViewSelector.module.scss';
 import { ArticleView } from '@/entities/Article';
 

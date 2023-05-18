@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget } from 'react';
-import { Text, TextSize } from '@/shared/ui/Text';
+import { Text, TextSize } from '@/shared/ui/deprecated/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ArticleView } from '@/entities/Article/model/consts/articleConsts';
 import { Article } from '../../model/types/article';
