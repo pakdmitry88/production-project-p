@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable i18next/no-literal-string */
 /* eslint-disable react/button-has-type */
 // eslint-disable-next-line import/no-duplicates
@@ -13,7 +14,9 @@ import { SideBarItem } from '../SideBarItem/SideBarItem';
 import cls from './Sidebar.module.scss';
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { AppLogo } from '@/shared/ui/deprecated/AppLogo';
+import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
+import { Icon } from '@/shared/ui/redesigned/Icon';
+import ArrowIcon from '@/shared/assets/icon/arrow-bottom.svg';
 
 interface SidebarProps {
   className?: string;
@@ -35,11 +38,36 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             on={(
                 <aside
                     data-testid="sidebar"
-                    className={classNames(cls.SidebarRedesigned, { [cls.collapsed]: collapsed }, [
+                    className={classNames(cls.SidebarRedesigned, { [cls.collapsedRedesigned]: collapsed }, [
                         className,
                     ])}
                 >
-                    <AppLogo className={cls.appLogo} />
+                    <AppLogo size={collapsed ? 30 : 50} className={cls.appLogo} />
+                    <VStack role="navigation" gap="8" className={cls.items}>
+                        <div>
+                            {sidebarItemsList.map((item) => (
+                                <SideBarItem
+                                    item={item}
+                                    collapsed={collapsed}
+                                    key={item.path}
+                                />
+                            ))}
+                        </div>
+                    </VStack>
+                    <Icon
+                        data-testid="sidebar-toggle"
+                        onClick={onToggle}
+                        className={cls.collapseBtn}
+                        Svg={ArrowIcon}
+                        clickable
+                    />
+                    <div className={cls.switchers}>
+                        <ThemeSwitcher />
+                        <LangSwitcher
+                            short={collapsed}
+                            className={cls.lang}
+                        />
+                    </div>
                 </aside>
             )}
             off={(

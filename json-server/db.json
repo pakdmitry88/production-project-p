@@ -1242,10 +1242,10 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
-        "isArticlesPageWasOpen": false
+        "isArticlesPageWasOpen": true
       },
       "avatar": "https://miro.medium.com/max/1200/1*62DACylOvJPnqUvaRPzMIA.png"
     },
