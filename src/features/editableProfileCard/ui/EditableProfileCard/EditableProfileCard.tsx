@@ -10,7 +10,7 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { Currency } from '@/entities/Currency';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { ProfileCard } from '@/entities/Profile';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { validateProfileError } from '../../model/const/consts';
 import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileForm';
 import { getProfileIsLoading } from '../../model/selectors/getProfileIsLoading/getProfileIsLoading';

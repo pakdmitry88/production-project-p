@@ -6,11 +6,6 @@ children: ReactNode;
 element?:HTMLElement;
 }
 
-/**
- * Устарел, используем новые компоненты из папки redesigned
- * @deprecated
- */
-
 // eslint-disable-next-line arrow-body-style
 export const Portal = (props: PortalProps) => {
     const {

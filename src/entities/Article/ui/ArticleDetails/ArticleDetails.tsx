@@ -16,7 +16,7 @@ import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import EyeIcon from '@/shared/assets/icon/eye-20-20.svg';
 import CalendarIcon from '@/shared/assets/icon/calendar-20-20.svg';
 import { Icon } from '@/shared/ui/deprecated/Icon';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { ArticleBlock } from '@/entities/Article/model/types/article';
 import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from '../../model/selectors/articleDetails';
 import cls from './ArticleDetails.module.scss';

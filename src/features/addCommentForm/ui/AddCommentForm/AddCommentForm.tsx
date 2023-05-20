@@ -13,7 +13,7 @@ import { useCallback } from 'react';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { HStack } from '@/shared/ui/deprecated/Stack';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 export interface AddCommentFormProps{
 className?: string;

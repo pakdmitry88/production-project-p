@@ -18,10 +18,6 @@ direction: FlexDirection;
 gap?: FlexGap;
 max?: boolean;
 }
-/**
- * Устарел, используем новые компоненты из папки redesigned
- * @deprecated
- */
 
 const justifyClasses: Record<FlexJustify, string> = {
     start: cls.justifyStart,

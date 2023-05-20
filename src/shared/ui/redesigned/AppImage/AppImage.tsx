@@ -8,10 +8,6 @@ fallback: ReactElement;
 errorFallback?: ReactElement;
 }
 
-/**
- * @deprecated
- */
-
 export const AppImage = memo((props: AppImageProps) => {
     const {
         className,

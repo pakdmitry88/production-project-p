@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { getSidebarItems } from '@/widgets/Sidebar/model/selectors/getSidebarItems';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Button, ButtonSize, ThemeButton } from '../../../../shared/ui/deprecated/Button/Button';
 import { SideBarItem } from '../SideBarItem/SideBarItem';
 import cls from './Sidebar.module.scss';

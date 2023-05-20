@@ -5,7 +5,7 @@ import { Listbox as HListBox } from '@headlessui/react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 import cls from './ListBox.module.scss';
-import { Button, ThemeButton } from '../../../Button/Button';
+import { Button } from '../../../Button/Button';
 import { HStack } from '../../../../redesigned/Stack';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
@@ -27,11 +27,6 @@ interface ListBoxProps {
   label?: string;
 }
 
-/**
- * Устарел, используем новые компоненты из папки redesigned
- * @deprecated
- */
-
 export function ListBox(props: ListBoxProps) {
     const {
         className,
@@ -44,7 +39,7 @@ export function ListBox(props: ListBoxProps) {
         label,
     } = props;
 
-    const optionsClasses = [mapDirectionClass[direction]];
+    const optionsClasses = [mapDirectionClass[direction], popupCls.menu];
 
     return (
         <HStack gap="4">
@@ -57,7 +52,7 @@ export function ListBox(props: ListBoxProps) {
                 onChange={onChange}
             >
                 <HListBox.Button disabled={readonly} className={cls.trigger}>
-                    <Button theme={ThemeButton.OUTLINE} disabled={readonly}>
+                    <Button disabled={readonly}>
                         {value ?? defaultValue}
                     </Button>
                 </HListBox.Button>

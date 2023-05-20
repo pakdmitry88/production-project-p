@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useCallback, useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
 import { Card } from '@/shared/ui/deprecated/Card';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Text } from '@/shared/ui/deprecated/Text';
 import { StarRating } from '@/shared/ui/deprecated/StarRating';
 import { Modal } from '@/shared/ui/deprecated/Modal';
