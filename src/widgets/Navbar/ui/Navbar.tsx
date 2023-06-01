@@ -38,38 +38,14 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 
     if (authData) {
         return (
-            <ToggleFeatures
-                feature="isAppRedesigned"
-                on={(
-                    <header className={classNames(cls.NavbarRedesigned, {}, [className])}>
-                        <HStack gap="16" className={cls.actions}>
-                            <NotificationButton />
-                            <AvatarDropdown />
-                        </HStack>
-                    </header>
-                )}
-                off={(
-                    <header className={classNames(cls.Navbar, {}, [className])}>
-                        <Text
-                            className={cls.appName}
-                            title={t('Pak App')}
-                            theme={TextTheme.INVERTED}
-                        />
-                        <AppLink
-                            to={getRouteArticleCreate()}
-                            theme={AppLinkTheme.SECONDARY}
-                            className={cls.createBtn}
-                        >
-                            {t('Создать статью')}
-                        </AppLink>
-                        <HStack gap="16" className={cls.actions}>
-
-                            <NotificationButton />
-                            <AvatarDropdown />
-                        </HStack>
-                    </header>
-                )}
-            />
+            
+                                <header className={classNames(cls.NavbarRedesigned, {}, [className])}>
+                                    <HStack gap="16" className={cls.actions}>
+                                        <NotificationButton />
+                                        <AvatarDropdown />
+                                    </HStack>
+                                </header>
+                            
 
         );
     }

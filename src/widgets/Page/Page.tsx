@@ -34,7 +34,11 @@ export const Page = (props: PageProps) => {
 
     useInfiniteScroll({
         triggerRef,
-        wrapperRef,
+        wrapperRef: toggleFeatures({
+            name: 'isAppRedesigned',
+            on: () => undefined,
+            off: () => wrapperRef,
+        }),
         callback: onScrollEnd,
     });
 
@@ -52,11 +56,7 @@ export const Page = (props: PageProps) => {
     return (
         <main
             ref={wrapperRef}
-            className={classNames(toggleFeatures({
-                name: 'isAppRedesigned',
-                on: () => cls.PageRedesigned,
-                off: () => cls.Page,
-            }), {}, [className])}
+            className={classNames(cls.PageRedesigned, {}, [className])}
             onScroll={onScroll}
             id={PAGE_ID}
             data-testid={props['data-testid'] ?? 'Page'}
