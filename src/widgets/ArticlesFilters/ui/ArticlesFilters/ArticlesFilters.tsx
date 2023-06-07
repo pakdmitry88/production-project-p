@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -43,6 +44,7 @@ export const ArticlesFilters = memo((props: ArticlesFiltersProps) => {
                 <Input
                     onChange={onChangeSearch}
                     value={search}
+                    size="s"
                     placeholder={t('Поиск')}
                     addonLeft={<Icon Svg={SearchIcon} />}
                 />
